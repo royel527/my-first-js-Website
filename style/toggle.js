@@ -1,8 +1,6 @@
 document.querySelector('.CashOut').style.display = 'none';
 document.querySelector('.transfer-money').style.display = 'none';
 document.querySelector('.pay-bill').style.display = 'none';
-document.getElementById('add-moneybox').style.display = 'block';
-
 
 document.getElementById('add-moneybox').addEventListener('click', function() {
     document.getElementById('add-money').style.display = 'block';
@@ -31,15 +29,6 @@ document.getElementById('pay-bill-box').addEventListener('click', function() {
     document.querySelector('.transfer-money').style.display = 'none';
     document.querySelector('.pay-bill').style.display = 'block';
 });
-
-// Hide all sections initially
-function hideAllSections() {
-  
-    document.querySelector('.CashOut').style.display = 'none';
-    document.querySelector('.transfer-money').style.display = 'none';
-    document.querySelector('.pay-bill').style.display = 'none';
-}
-
 
 document.getElementById('cashout-btn').addEventListener('click', function(event) {
     event.preventDefault();

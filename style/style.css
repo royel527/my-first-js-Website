@@ -12,3 +12,32 @@
     padding-right: 10px;
     margin: 5px;
 }
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .card-box {
+        width: 100%; /* Make the card boxes full width */
+        height: auto; /* Adjust the height automatically */
+        gap: 2px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr; /* Make the grid single column */
+    }
+
+    .flex {
+        flex-direction: column; /* Stack flex items vertically */
+    }
+
+    .hero {
+        padding: 20px; /* Add padding to the hero section */
+    }
+
+    .form-control {
+        width: 100%; /* Make form controls full width */
+    }
+
+    .btn {
+        width: 100%; /* Make buttons full width */
+    }
+}
