@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
     <header>
@@ -17,7 +18,7 @@
     <div class="w-15 h-10">
         <img src="assets/Group.png" alt="">
     </div>
-    <div class="font-bold text-2xl" ><h1 class="pl-15">$ <span id="dollar">4500</span></h1><h1>Available Balance</h1></div>
+    <div class="font-bold text-2xl" ><h1 class="lg:pl-15 pl-5 ">$ <span id="dollar">4500</span></h1><h1>Available Balance</h1></div>
     <button class="bg-sky-300/100 px-7 rounded-xl font-bold">Log Out</button>
     
 </nav>
@@ -28,41 +29,41 @@
     <!-- discri[ption] -->
      <div class="m-10 ">
         <h1 class="font-bold text-2xl">🔥 Welcome to Payooo!</h1>
-        <p class="font-bold ">Enjoy easy and convenient financial services with us. <br> Cashout charge is low and </p>
+        <p class="font-bold ">Enjoy easy and convenient financial services with us. <br> Cashout charge is low and so easy.</p>
      </div>
 
 
      <!-- card making -->
-<section  class="grid lg:grid-cols-4 grid-cols-2  gap-2 my-10  justify-items-center">
-<div id="add-moneybox" class="border p-5 font-bold rounded-xl shadow-lg space-y-2">
+<section id="card" class="grid lg:grid-cols-4 grid-cols-2  gap-2 my-10  justify-items-center">
+<div id="add-moneybox" class="card-box btn btn-outline btn-accent">
     <img class="mx-auto" src="assets/wallet1.png" alt="">
     <h1>Add Money</h1>
 </div>
-<div id="CashOut-box" class="border p-5 font-bold rounded-xl shadow-lg space-y-2">
+<div id="CashOut-box" class="card-box btn btn-outline btn-info">
     <img class="mx-auto" src="assets/send1.png" alt="">
     <h1>CashOut</h1>
 </div>
-<div class="border p-5 font-bold rounded-xl shadow-lg space-y-2">
+<div class="card-box btn">
     <img class="mx-auto" src="assets/money1.png" alt="">
     <h1>Pay Bill</h1>
 </div>
-<div class="border p-5 font-bold rounded-xl shadow-lg space-y-2">
+<div class="card-box btn">
     <img class="mx-auto" src="assets/bonus1.png" alt="">
     <h1>Transfer <br> money</h1>
 </div>
-<div class="border p-5 font-bold rounded-xl shadow-lg space-y-2">
+<div class="card-box btn">
     <img class="mx-auto" src="assets/send1.png" alt="">
     <h1>Get Bonus</h1>
 </div>
-<div class="border p-5 font-bold rounded-xl shadow-lg space-y-2">
+<div class="card-box btn">
     <img class="mx-auto" src="assets/bonus1.png" alt="">
     <h1>Transaction <br> history</h1>
 </div>
-<div class="border p-5 font-bold rounded-xl shadow-lg space-y-2">
+<div class="card-box btn">
     <img class="mx-auto" src="assets/purse1.png" alt="">
     <h1>Save Money</h1>
 </div>
-<div class="border p-5 font-bold rounded-xl shadow-lg space-y-2">
+<div class="card-box btn">
     <img class="mx-auto" src="assets/send1.png" alt="">
     <h1>Insurance</h1>
 </div>
@@ -79,7 +80,7 @@
             <form class="card-body">
                 <div class="form-control">
                     <label class="label">
-                      <span class="label-text">Select Bank</span>
+                      <span class="label-text font-bold">Select Bank</span>
                     </label>
                     <select class="select select-bordered w-full max-w-xs">
                         <option disabled selected>Select Bank </option>
@@ -89,7 +90,7 @@
                         <option>DBBL</option>
                       </select><br>
                       <label class="label">
-                        <span class="label-text">Account Number</span>
+                        <span class="label-text font-bold">Account Number</span>
                       </label>
                     <input id="account-number" type="text" placeholder="Enter your 11 digit number" class="input input-bordered" required />
                  
@@ -97,12 +98,12 @@
                 </div>
                   <div class="form-control">
                     <label class="label">
-                      <span class="label-text">PIN</span>
+                      <span class="label-text font-bold">PIN</span>
                     </label>
                     <input  id="pin" type="password" placeholder="Enter PIN" class="input input-bordered" required />
                    
                     <label class="label">
-                        <span  class="label-text">Amount</span>
+                        <span  class="label-text font-bold">Amount</span>
                       </label>
                       <input  id="amount" type="number" placeholder="Type your amount" class="input input-bordered" required />
                       <label class="label">
@@ -134,7 +135,7 @@
                 <div class="form-control">
                
                       <label class="label">
-                        <span class="label-text">Agent Number</span>
+                        <span class="label-text font-bold">Agent Number</span>
                       </label>
                     <input id="account-number2" type="text" placeholder="Enter your 11 digit number" class="input input-bordered" required />
                  
@@ -142,12 +143,12 @@
                 </div>
                   <div class="form-control">
                     <label class="label">
-                      <span class="label-text">PIN</span>
+                      <span class="label-text font-bold">PIN</span>
                     </label>
                     <input  id="pin2" type="password" placeholder="Enter PIN " class="input input-bordered" required />
                    
                     <label class="label">
-                        <span  class="label-text">Amount</span>
+                        <span  class="label-text font-bold ">Amount</span>
                       </label>
                       <input  id="amount2" type="number" placeholder="Type your amount " class="input input-bordered" required />
                       <label class="label">
