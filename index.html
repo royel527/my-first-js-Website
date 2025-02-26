@@ -12,31 +12,31 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
-<body>
+<body class="space-y-20">
     <header>
         
-            <nav class="h-70">
-                <div class="relative ml-125 mt-5">
-                    <img class="w-70" src="assets/bg.png" alt="">
-                   
-                </div>
-                <img class="w-20 ml-140 mt-0" src="assets/Group.png" alt="">
-            </nav>
+          <nav class="flex justify-center items-center mt-30">
+            <div class="mt-10 relative flex justify-center items-center w-9/12 mb-10">
+              <img class="w-80 absolute" src="assets/bg.png" alt="">
+              <img class="w-20" src="assets/Group.png" alt="">
+            </div>
+          </nav>
             
-            <div class="hero  min-h-screen">
+            <div class="hero ">
                 
                 
+            
                   <div class="card  w-full max-w-sm shadow-2xl">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
-                          <span class="label-text">Number</span>
+                          <span class="label-text font-bold ">Number</span>
                         </label>
-                        <input id="account-number" type="number" placeholder="Enter your Number" class="input input-bordered" required />
+                        <input id="account-number" type="text" placeholder="Enter your Number" class="input input-bordered" required />
                       </div>
                       <div class="form-control">
                         <label class="label">
-                          <span class="label-text">Password</span>
+                          <span class="label-text font-bold ">Password</span>
                         </label>
                         <input id="pin" type="password" placeholder="password" class="input input-bordered" required />
                         <label class="label">
@@ -44,7 +44,7 @@
                         </label>
                       </div>
                       <div class="form-control ">
-                        <button id="login-btn" class="btn btn-primary">Login</button>
+                        <button id="login-btn" class="btn btn-primary font-bold ">Login</button>
                       </div>
                     </form>
                   </div>
