@@ -35,22 +35,27 @@
 
      <!-- card making -->
 <section id="card" class="grid lg:grid-cols-4 grid-cols-2  gap-2 my-10  justify-items-center">
+  
 <div id="add-moneybox" class="card-box btn btn-outline btn-accent">
     <img class="mx-auto" src="assets/wallet1.png" alt="">
     <h1>Add Money</h1>
 </div>
+
 <div id="CashOut-box" class="card-box btn btn-outline btn-info">
     <img class="mx-auto" src="assets/send1.png" alt="">
     <h1>CashOut</h1>
 </div>
-<div class="card-box btn">
+
+<div id="transfer-box" class="card-box btn">
+  <img class="mx-auto" src="assets/bonus1.png" alt="">
+  <h1>Transfer <br> money</h1>
+</div>
+
+<div id="pay-bill-box" class="card-box btn">
     <img class="mx-auto" src="assets/money1.png" alt="">
     <h1>Pay Bill</h1>
 </div>
-<div class="card-box btn">
-    <img class="mx-auto" src="assets/bonus1.png" alt="">
-    <h1>Transfer <br> money</h1>
-</div>
+
 <div class="card-box btn">
     <img class="mx-auto" src="assets/send1.png" alt="">
     <h1>Get Bonus</h1>
@@ -75,8 +80,7 @@
  <section id="add-money">
     <div class="flex justify-between p-10"><h1 class="font-bold  text-2xl ">Add money</h1><h1>View All</h1></div>
 
-    <div class="hero min-h-screen flex flex-col items-center">
-        <div class="card w-full max-w-sm shadow-2xl mt-5">
+    <div class="hero min-h-screen flex flex-col items-center justify-        <div class="card w-full max-w-sm shadow-2xl mt-5">
             <form class="card-body">
                 <div class="form-control">
                     <label class="label">
@@ -163,18 +167,107 @@
                   </div>
                   
                   <div class="form-control ">
-                    <button id="cashout-btn" class="btn btn-primary font-bold">CashOut</button>
+                    <button id="cashout-btn" class="btn bg-sky-300 font-bold">CashOut</button>
                   </div>
             </form>
         </div>
     </div>
  </section>
 
+<!-- -----Money Transfer----- -->
+
+<section class="transfer-money">
+  <div class="flex justify-between p-10"><h1 class="font-bold  text-2xl ">Money Transfre</h1><h1>View All</h1></div>
+
+  <div class="hero min-h-screen flex flex-col items-center">
+      <div class="card w-full max-w-sm shadow-2xl mt-5">
+          <form class="card-body">
+              <div class="form-control">
+             
+                    <label class="label">
+                      <span class="label-text font-bold">User Account Number</span>
+                    </label>
+                  <input id="account-number2" type="text" placeholder="Enter your 11 digit number" class="input input-bordered" required />
+               
+                  
+              </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text font-bold">PIN</span>
+                  </label>
+                  <input  id="pin2" type="password" placeholder="Enter PIN " class="input input-bordered" required />
+                 
+                  <label class="label">
+                      <span  class="label-text font-bold ">Amount</span>
+                    </label>
+                    <input  id="amount2" type="number" placeholder="Type your amount " class="input input-bordered" required />
+                    <label class="label">
+                  
+                  <label class="label">
+
+                    
+
+
+                    <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                  </label>
+                </div>
+                
+                <div class="form-control ">
+                  <button id="cashout-btn" class="btn bg-red-200">Send Now</button>
+                </div>
+          </form>
+      </div>
+  </div>
+</section>
+
+<!-- ----pay bill-------- -->
+
+<section class="pay-bill">
+  <div class="flex justify-between p-10"><h1 class="font-bold  text-2xl ">Pay Bill</h1><h1>View All</h1></div>
+
+  <div class="hero min-h-screen flex flex-col items-center">
+      <div class="card w-full max-w-sm shadow-2xl mt-5">
+          <form class="card-body">
+              <div class="form-control">
+                  <label class="label">
+                    <span class="label-text font-bold">Select To Pay</span>
+                  </label>
+                  <select class="select select-bordered w-full max-w-xs">
+                      <option disabled selected>Select Bank </option>
+                      <option>BKash</option>
+                      <option>Nagad</option>
+                      <option>Upay</option>
+                      <option>DBBL</option>
+                    </select><br>
+                    <label class="label">
+                      <span class="label-text font-bold">Biller Account Number</span>
+                    </label>
+                  <input id="account-number" type="text" placeholder="Enter your 11 digit number" class="input input-bordered" required />
+               
+                  
+              </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text font-bold">PIN Number</span>
+                  </label>
+                  <input  id="pin" type="password" placeholder="Enter PIN" class="input input-bordered" required />
+                 
+                  <label class="label">
+                      <span  class="label-text font-bold">Amount To Pay</span>
+                    </label>
+                    <input  id="amount" type="number" placeholder="Type your amount" class="input input-bordered" required />
+                    <label class="label">
+                </div>
+                
+                <div class="form-control ">
+                  <button id="addmoney-btn" class="btn bg-green-200">Pay Now</button>
+                </div>
+          </form>
+      </div>
+  </div>
+</section>
+
 </main>
-<script>
-
-
-</script>
 <script src="./style/add-money.js"></script>
 <script src="./style/toggle.js"></script>
 </body>
